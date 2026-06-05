@@ -431,7 +431,9 @@
 
                 <div class="contact-form-wrapper">
                     <h3>Send Inquiry</h3>
-                    <form class="contact-form" id="inquiryForm">
+                    <form class="contact-form" id="inquiryForm" name="inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                        <input type="hidden" name="form-name" value="inquiry">
+                        <p style="display:none;"><label>Don't fill this out if you're human: <input name="bot-field"></label></p>
                         <div class="form-group">
                             <input type="text" name="name" placeholder="Your Name *" required>
                         </div>
