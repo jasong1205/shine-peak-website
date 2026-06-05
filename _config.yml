@@ -8,11 +8,16 @@ markdown: kramdown
 highlighter: rouge
 permalink: /blog/:year/:month/:day/:title/
 
-# Plugins
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
+# Plugins (commented out for now)
+# plugins:
+#   - jekyll-feed
+#   - jekyll-sitemap
+#   - jekyll-seo-tag
+
+# Build settings only
+markdown: kramdown
+highlighter: rouge
+permalink: /blog/:year/:month/:day/:title/
 
 # Collections
 collections:
