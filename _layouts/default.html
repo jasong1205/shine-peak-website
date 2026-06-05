@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>{% if page.title %}{{ page.title }} | {% endif %}Shine Peak - Eco-Friendly Disposable Tableware</title>
+    <meta name="title" content="{% if page.title %}{{ page.title }} | {% endif %}Shine Peak - Eco-Friendly Disposable Tableware Manufacturer">
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}Leading manufacturer of eco-friendly disposable tableware: bagasse, kraft paper, wooden bamboo, paper straws. Biodegradable & compostable food packaging solutions.{% endif %}">
+    <meta name="keywords" content="eco-friendly tableware, biodegradable food packaging, bagasse tableware, paper straws{% if page.keywords %}, {{ page.keywords }}{% endif %}">
+    <meta name="author" content="Shine Peak">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}Shine Peak">
+    <meta property="og:description" content="{{ page.description | default: 'Leading manufacturer of eco-friendly disposable tableware' }}">
+    <meta property="og:image" content="{{ '/images/og-image.jpg' | absolute_url }}">
+    <meta property="og:site_name" content="Shine Peak">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{ page.url | absolute_url }}">
+    <meta property="twitter:title" content="{% if page.title %}{{ page.title }} | {% endif %}Shine Peak">
+    <meta property="twitter:description" content="{{ page.description | default: 'Leading manufacturer of eco-friendly disposable tableware' }}">
+    <meta property="twitter:image" content="{{ '/images/og-image.jpg' | absolute_url }}">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="{{ '/images/favicon.png' | relative_url }}">
+    
+    <!-- RSS Feed -->
+    {% feed_meta %}
+    
+    <!-- SEO Tag -->
+    {% seo %}
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <span><i class="fas fa-phone"></i> +86 21 1234 5678</span>
+                <span><i class="fas fa-envelope"></i> info@shinepeak.com</span>
+                <div class="social-icons-top">
+                    <a href="https://facebook.com/shinepeak" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com/shinepeak" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://tiktok.com/@shinepeak" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://twitter.com/shinepeak" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://linkedin.com/company/shinepeak" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>Shine<span>Peak</span></h1>
+                <p class="tagline">Eco-Friendly Tableware</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="{{ '/' | relative_url }}">Home</a></li>
+                <li><a href="{{ '/blog' | relative_url }}">Blog</a></li>
+                <li><a href="{{ '/about' | relative_url }}">About</a></li>
+                <li><a href="{{ '/contact' | relative_url }}">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        {{ content }}
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Shine Peak</h3>
+                    <p>Your trusted partner for eco-friendly disposable tableware & food packaging solutions.</p>
+                    <div class="footer-social">
+                        <a href="https://facebook.com/shinepeak"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/shinepeak"><i class="fab fa-instagram"></i></a>
+                        <a href="https://tiktok.com/@shinepeak"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://linkedin.com/company/shinepeak"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="{{ '/products/bagasse' | relative_url }}">Bagasse Tableware</a></li>
+                        <li><a href="{{ '/products/kraft-paper' | relative_url }}">Kraft Paper Products</a></li>
+                        <li><a href="{{ '/products/paper-straws' | relative_url }}">Paper Straws</a></li>
+                        <li><a href="{{ '/products/wooden-bamboo' | relative_url }}">Wooden & Bamboo</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="{{ '/' | relative_url }}">Home</a></li>
+                        <li><a href="{{ '/blog' | relative_url }}">Blog</a></li>
+                        <li><a href="{{ '/about' | relative_url }}">About Us</a></li>
+                        <li><a href="{{ '/contact' | relative_url }}">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +86 21 1234 5678</p>
+                    <p><i class="fas fa-envelope"></i> info@shinepeak.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Shanghai, China</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; {{ site.time | date: '%Y' }} Shine Peak. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="{{ '/js/script.js' | relative_url }}"></script>
+</body>
+</html>

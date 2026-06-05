@@ -1,0 +1,30 @@
+---
+layout: default
+title: "Blog - Shine Peak"
+description: "Latest news, tips, and insights about eco-friendly disposable tableware and sustainable packaging."
+---
+
+<section class="blog-listing">
+    <div class="container">
+        <h1>Blog</h1>
+        <p class="blog-intro">Latest news, tips, and insights about eco-friendly tableware and sustainable packaging.</p>
+        
+        <div class="blog-posts">
+            {% for post in site.posts %}
+            <article class="blog-post-preview">
+                <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+                <p class="post-meta">
+                    <i class="fas fa-calendar"></i> {{ post.date | date: "%B %d, %Y" }}
+                    {% if post.author %} | <i class="fas fa-user"></i> {{ post.author }}{% endif %}
+                </p>
+                <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
+                <a href="{{ post.url | relative_url }}" class="btn btn-primary">Read More</a>
+            </article>
+            {% endfor %}
+        </div>
+        
+        {% if site.posts.size == 0 %}
+        <p class="no-posts">No blog posts yet. Stay tuned!</p>
+        {% endif %}
+    </div>
+</section>

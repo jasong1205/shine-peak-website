@@ -1,0 +1,50 @@
+---
+layout: default
+---
+<section class="blog-post">
+    <div class="container">
+        <article>
+            <header class="post-header">
+                <h1>{{ page.title }}</h1>
+                <p class="post-meta">
+                    <i class="fas fa-calendar"></i> {{ page.date | date: "%B %d, %Y" }}
+                    {% if page.author %} | <i class="fas fa-user"></i> {{ page.author }}{% endif %}
+                    {% if page.categories %} | <i class="fas fa-folder"></i> {{ page.categories | join: ", " }}{% endif %}
+                </p>
+            </header>
+            
+            <div class="post-content">
+                {{ content }}
+            </div>
+            
+            {% if page.tags %}
+            <div class="post-tags">
+                <h4>Tags:</h4>
+                <ul>
+                    {% for tag in page.tags %}
+                    <li><a href="#">{{ tag }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+            
+            <div class="post-share">
+                <h4>Share this post:</h4>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}" aria-label="Share on Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/intent/tweet?url={{ page.url | absolute_url }}&text={{ page.title }}" aria-label="Share on Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/shareArticle?url={{ page.url | absolute_url }}&title={{ page.title }}" aria-label="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            
+            <div class="post-navigation">
+                {% if page.previous %}
+                <a href="{{ page.previous.url | relative_url }}" class="prev-post">&laquo; {{ page.previous.title }}</a>
+                {% endif %}
+                {% if page.next %}
+                <a href="{{ page.next.url | relative_url }}" class="next-post">{{ page.next.title }} &raquo;</a>
+                {% endif %}
+            </div>
+        </article>
+    </div>
+</section>

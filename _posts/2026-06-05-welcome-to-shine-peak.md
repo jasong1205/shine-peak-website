@@ -1,42 +1,38 @@
 ---
-title: "Welcome to Shine Peak - Your Trusted Eco-Friendly Tableware Supplier"
-date: "2026-06-05 10:00:00"
-description: "Learn about Shine Peak, a leading manufacturer of eco-friendly disposable tableware including sugarcane pulp products, paper straws, and wooden cutlery."
-thumbnail: "/images/uploads/blog-1.jpg"
-tags: ["eco-friendly", "tableware", "sustainable", "company-introduction"]
+layout: post
+title: "Welcome to Shine Peak Blog"
+description: "Welcome to the Shine Peak blog! Here we share insights about eco-friendly disposable tableware, sustainable packaging solutions, and industry trends."
+author: "Shine Peak Team"
+date: 2026-06-05
+categories: [company-news, sustainability]
+tags: [welcome, eco-friendly, sustainable-packaging]
 ---
 
-# Welcome to Shine Peak
+# Welcome to Shine Peak Blog
 
-Welcome to **Shine Peak** - your trusted partner for eco-friendly disposable tableware! 
+Welcome to the **Shine Peak blog**! 🎉
 
-## Who We Are
+Here we will share:
+- ✅ Latest trends in eco-friendly disposable tableware
+- ✅ Sustainable packaging solutions
+- ✅ Industry insights and tips
+- ✅ Company news and updates
 
-We are a professional manufacturer and exporter of sustainable disposable tableware, committed to providing high-quality, environmentally friendly products to customers worldwide.
+## Why Eco-Friendly Tableware Matters
 
-## Our Products
+The world is shifting towards sustainable solutions, and disposable tableware is no exception. At **Shine Peak**, we are committed to providing high-quality, biodegradable, and compostable tableware solutions for businesses worldwide.
 
-Our product range includes:
-- **Sugarcane Pulp Tableware** - 100% biodegradable and compostable
-- **Paper Straws** - Eco-friendly alternative to plastic straws
-- **Wooden Cutlery** - Natural and sustainable
-- **Bamboo Tableware** - Durable and elegant
+### Our Product Range
 
-## Why Choose Us?
+- **Bagasse Tableware**: Made from sugarcane waste, 100% biodegradable
+- **Kraft Paper Products**: Recyclable and eco-friendly
+- **Paper Straws**: The perfect alternative to plastic straws
+- **Wooden & Bamboo Tableware**: Natural and sustainable
 
-✅ **Quality Assurance** - Strict quality control system  
-✅ **Competitive Prices** - Direct factory prices  
-✅ **Fast Delivery** - Efficient logistics  
-✅ **Custom Solutions** - OEM/ODM services available  
+## Stay Tuned
 
-## Contact Us
-
-Ready to place an order or have questions? Contact us today!
-
-📧 Email: info@shinepeak.com  
-📱 WhatsApp: +86 138 0000 0000  
-🌐 Website: https://elegant-pika-605dd2.netlify.app/
+Subscribe to our newsletter to get the latest updates!
 
 ---
 
-*Thank you for choosing Shine Peak - together, we make the world greener!* 🌱
+*Thank you for reading!* 🙏
