@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: jasong1205/shine-peak-website
   branch: main # Branch to update (optional; defaults to main)
 
 publish_mode: simple
