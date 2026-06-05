@@ -8,16 +8,11 @@ markdown: kramdown
 highlighter: rouge
 permalink: /blog/:year/:month/:day/:title/
 
-# Plugins (commented out for now)
-# plugins:
-#   - jekyll-feed
-#   - jekyll-sitemap
-#   - jekyll-seo-tag
-
-# Build settings only
-markdown: kramdown
-highlighter: rouge
-permalink: /blog/:year/:month/:day/:title/
+# Plugins (enable basic plugins for SEO)
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 # Collections
 collections:
@@ -51,9 +46,6 @@ social:
   facebook: "https://facebook.com/shinepeak"
   instagram: "https://instagram.com/shinepeak"
   linkedin: "https://linkedin.com/company/shinepeak"
-
-# Google Analytics
-# google_analytics: "UA-XXXXXXXXX-X"
 
 # Exclude from processing
 exclude:
