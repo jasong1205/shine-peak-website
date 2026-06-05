@@ -1,0 +1,387 @@
+/* ===================================
+   Shine Peak - B2B Traditional Export Website Style
+   Professional, Clean, Business-Focused
+   =================================== */
+
+/* CSS Variables - B2B Professional Color Scheme */
+:root {
+    --primary-color: #2c5282; /* Professional Blue */
+    --secondary-color: #4a7c28; /* Green for eco-friendly */
+    --accent-color: #f39c12; /* Orange for CTAs */
+    --text-dark: #2d3748; /* Dark gray for text */
+    --text-light: #718096; /* Light gray for secondary text */
+    --bg-light: #f7fafc; /* Light background */
+    --bg-white: #ffffff;
+    --border-color: #e2e8f0;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background: var(--bg-white);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===================================
+   Hero Section - B2B Style
+   =================================== */
+.hero-b2b {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #1a365d 100%);
+    color: white;
+    padding: 80px 0;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-b2b-content {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.hero-b2b-text {
+    flex: 1;
+}
+
+.hero-b2b-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.hero-b2b-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.95;
+}
+
+.hero-b2b-stats {
+    display: flex;
+    gap: 40px;
+    margin: 30px 0;
+}
+
+.stat-b2b {
+    text-align: center;
+}
+
+.stat-number-b2b {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--accent-color);
+}
+
+.stat-label-b2b {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.hero-b2b-buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.hero-b2b-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-b2b-image img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: var(--shadow-hover);
+}
+
+/* ===================================
+   Buttons - B2B Style
+   =================================== */
+.btn-b2b {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 4px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-b2b-primary {
+    background: var(--accent-color);
+    color: white;
+}
+
+.btn-b2b-primary:hover {
+    background: #e67e22;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
+}
+
+.btn-b2b-secondary {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-b2b-secondary:hover {
+    background: white;
+    color: var(--primary-color);
+}
+
+/* ===================================
+   Section Titles - B2B Style
+   =================================== */
+.section-title-b2b {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+    color: var(--text-dark);
+}
+
+.section-subtitle-b2b {
+    font-size: 1.1rem;
+    text-align: center;
+    color: var(--text-light);
+    margin-bottom: 50px;
+}
+
+/* ===================================
+   Products Section - B2B Style
+   =================================== */
+.products-b2b {
+    padding: 80px 0;
+    background: var(--bg-light);
+}
+
+.products-b2b-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.product-b2b-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+}
+
+.product-b2b-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.product-b2b-image {
+    height: 250px;
+    overflow: hidden;
+}
+
+.product-b2b-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-b2b-content {
+    padding: 25px;
+}
+
+.product-b2b-content h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: var(--text-dark);
+}
+
+.product-b2b-content p {
+    color: var(--text-light);
+    margin-bottom: 15px;
+}
+
+.product-b2b-features {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.product-b2b-features li {
+    padding: 5px 0;
+    color: var(--text-light);
+}
+
+/* ===================================
+   Why Choose Us - B2B Style
+   =================================== */
+.why-choose-b2b {
+    padding: 80px 0;
+}
+
+.features-b2b-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.feature-b2b-item {
+    text-align: center;
+    padding: 30px;
+}
+
+.feature-b2b-item i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.feature-b2b-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: var(--text-dark);
+}
+
+.feature-b2b-item p {
+    color: var(--text-light);
+}
+
+/* ===================================
+   Contact Section - B2B Style
+   =================================== */
+.contact-b2b {
+    padding: 80px 0;
+    background: var(--bg-light);
+}
+
+.contact-b2b-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.contact-b2b-info {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.contact-b2b-info h3 {
+    margin-bottom: 20px;
+    color: var(--text-dark);
+}
+
+.contact-b2b-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.contact-b2b-item i {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-top: 3px;
+}
+
+.contact-b2b-form {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.contact-b2b-form h3 {
+    margin-bottom: 20px;
+    color: var(--text-dark);
+}
+
+.contact-b2b-form input,
+.contact-b2b-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.contact-b2b-form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/* ===================================
+   Trust Badges - B2B Style
+   =================================== */
+.trust-badges-b2b {
+    background: var(--bg-light);
+    padding: 30px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.badges-b2b-grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.badge-b2b-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.badge-b2b-item i {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+/* ===================================
+   Responsive Design
+   =================================== */
+@media (max-width: 768px) {
+    .hero-b2b-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-b2b-title {
+        font-size: 2rem;
+    }
+    
+    .hero-b2b-stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .contact-b2b-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .products-b2b-grid {
+        grid-template-columns: 1fr;
+    }
+}
