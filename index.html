@@ -47,10 +47,7 @@ keywords: "eco-friendly tableware, biodegradable food packaging, bagasse tablewa
             <!-- Product 1: Bagasse Tableware -->
             <div class="product-card">
                 <div class="product-image">
-                    <img src="https://images.unsplash.com/photo-1586201375761-15080849ccf7?w=400&h=300&fit=crop" 
-                         alt="Bagasse Tableware - Eco-friendly sugarcane plates and bowls"
-                         class="product-img"
-                         data-fallback="bagasse">
+                    <img src="/assets/images/bagasse-tableware.jpg" alt="Bagasse Tableware - Eco-friendly sugarcane plates and bowls" class="product-img">
                 </div>
                 <div class="product-info">
                     <h3>Bagasse Tableware</h3>
@@ -67,10 +64,7 @@ keywords: "eco-friendly tableware, biodegradable food packaging, bagasse tablewa
             <!-- Product 2: Kraft Paper -->
             <div class="product-card">
                 <div class="product-image">
-                    <img src="https://images.unsplash.com/photo-1587563851165-3f8f35a89f57?w=400&h=300&fit=crop" 
-                         alt="Kraft Paper Tableware - Paper bowls and cups"
-                         class="product-img"
-                         data-fallback="kraft">
+                    <img src="/assets/images/kraft-paper.jpg" alt="Kraft Paper Tableware - Paper bowls and cups" class="product-img">
                 </div>
                 <div class="product-info">
                     <h3>Kraft Paper Tableware</h3>
@@ -87,10 +81,7 @@ keywords: "eco-friendly tableware, biodegradable food packaging, bagasse tablewa
             <!-- Product 3: Paper Straws -->
             <div class="product-card">
                 <div class="product-image">
-                    <img src="https://images.unsplash.com/photo-1544787219-7f4761fc1e66?w=400&h=300&fit=crop" 
-                         alt="Paper Straws - Biodegradable drinking straws"
-                         class="product-img"
-                         data-fallback="straws">
+                    <img src="/assets/images/paper-straws.jpg" alt="Paper Straws - Biodegradable drinking straws" class="product-img">
                 </div>
                 <div class="product-info">
                     <h3>Paper Straws</h3>
@@ -107,10 +98,7 @@ keywords: "eco-friendly tableware, biodegradable food packaging, bagasse tablewa
             <!-- Product 4: Wooden & Bamboo -->
             <div class="product-card">
                 <div class="product-image">
-                    <img src="https://images.unsplash.com/photo-1585232351005-82dcb50392b7?w=400&h=300&fit=crop" 
-                         alt="Wooden & Bamboo Cutlery - Natural disposable utensils"
-                         class="product-img"
-                         data-fallback="wooden">
+                    <img src="/assets/images/wooden-bamboo.jpg" alt="Wooden & Bamboo Cutlery - Natural disposable utensils" class="product-img">
                 </div>
                 <div class="product-info">
                     <h3>Wooden & Bamboo</h3>
@@ -127,10 +115,7 @@ keywords: "eco-friendly tableware, biodegradable food packaging, bagasse tablewa
             <!-- Product 5: CPLA Cutlery -->
             <div class="product-card">
                 <div class="product-image">
-                    <img src="https://images.unsplash.com/photo-1567447770413-b141e4c17a0b?w=400&h=300&fit=crop" 
-                         alt="CPLA Cutlery - Compostable plant-based utensils"
-                         class="product-img"
-                         data-fallback="cpla">
+                    <img src="/assets/images/cpla-cutlery.jpg" alt="CPLA Cutlery - Compostable plant-based utensils" class="product-img">
                 </div>
                 <div class="product-info">
                     <h3>CPLA Cutlery</h3>
@@ -258,20 +243,4 @@ keywords: "eco-friendly tableware, biodegradable food packaging, bagasse tablewa
     </div>
 </section>
 
-<!-- Image Fallback Script -->
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const productImages = document.querySelectorAll('.product-img');
-    
-    productImages.forEach(function(img) {
-        img.addEventListener('error', function() {
-            const fallbackClass = this.getAttribute('data-fallback');
-            const fallbackDiv = document.createElement('div');
-            fallbackDiv.className = 'product-img-' + fallbackClass;
-            
-            this.style.display = 'none';
-            this.parentNode.appendChild(fallbackDiv);
-        });
-    });
-});
-</script>
+
