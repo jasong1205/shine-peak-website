@@ -47,16 +47,25 @@
     <!-- Top Bar -->
     <div class="top-bar">
         <div class="container">
-            <div class="top-bar-content">
-                <span><i class="fas fa-phone"></i> +86 21 1234 5678</span>
-                <span><i class="fas fa-envelope"></i> info@shinepeak.com</span>
-                <div class="social-icons-top">
-                    <a href="https://facebook.com/shinepeak" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://instagram.com/shinepeak" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="https://tiktok.com/@shinepeak" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-                    <a href="https://twitter.com/shinepeak" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="https://linkedin.com/company/shinepeak" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <div class="top-bar-left">
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>+86 21 1234 5678</span>
                 </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>info@shinepeak.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Shanghai, China</span>
+                </div>
+            </div>
+            <div class="top-bar-right">
+                <a href="https://wa.me/8613800138000" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="/blog" title="Blog"><i class="fas fa-blog"></i></a>
             </div>
         </div>
     </div>
@@ -65,15 +74,15 @@
     <nav class="navbar">
         <div class="container">
             <div class="logo">
-                <h1>Shine<span>Peak</span></h1>
-                <p class="tagline">Eco-Friendly Tableware</p>
+                <h1>Shine <span>Peak</span></h1>
+                <span class="tagline">Eco-Friendly Tableware Manufacturer</span>
             </div>
             <ul class="nav-links">
                 <li><a href="{{ '/' | relative_url }}#home">Home</a></li>
                 <li><a href="{{ '/' | relative_url }}#products">Products</a></li>
                 <li><a href="{{ '/' | relative_url }}#about">About</a></li>
                 <li><a href="{{ '/' | relative_url }}#contact">Contact</a></li>
-                <li><a href="{{ '/blog' | relative_url }}">Blog</a></li>
+                <li><a href="{{ '/' | relative_url }}#contact" class="cta-btn">Get Quote</a></li>
             </ul>
         </div>
     </nav>
@@ -89,42 +98,61 @@
             <div class="footer-grid">
                 <div class="footer-section">
                     <h3>Shine Peak</h3>
-                    <p>Your trusted partner for eco-friendly disposable tableware & food packaging solutions.</p>
+                    <p>Professional manufacturer of eco-friendly disposable tableware. Committed to providing sustainable food packaging solutions for global clients.</p>
                     <div class="footer-social">
-                        <a href="https://facebook.com/shinepeak"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://instagram.com/shinepeak"><i class="fab fa-instagram"></i></a>
-                        <a href="https://tiktok.com/@shinepeak"><i class="fab fa-tiktok"></i></a>
-                        <a href="https://linkedin.com/company/shinepeak"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/8613800138000" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="/blog" title="Blog"><i class="fas fa-blog"></i></a>
                     </div>
                 </div>
+                
                 <div class="footer-section">
                     <h4>Products</h4>
                     <ul>
-                        <li><a href="{{ '/products/bagasse' | relative_url }}">Bagasse Tableware</a></li>
-                        <li><a href="{{ '/products/kraft-paper' | relative_url }}">Kraft Paper Products</a></li>
-                        <li><a href="{{ '/products/paper-straws' | relative_url }}">Paper Straws</a></li>
-                        <li><a href="{{ '/products/wooden-bamboo' | relative_url }}">Wooden & Bamboo</a></li>
+                        <li><a href="#products">Bagasse Tableware</a></li>
+                        <li><a href="#products">Kraft Paper Tableware</a></li>
+                        <li><a href="#products">Paper Straws</a></li>
+                        <li><a href="#products">Wooden & Bamboo</a></li>
+                        <li><a href="#products">CPLA Cutlery</a></li>
                     </ul>
                 </div>
+                
                 <div class="footer-section">
-                    <h4>Quick Links</h4>
+                    <h4>Company</h4>
                     <ul>
-                        <li><a href="{{ '/' | relative_url }}#home">Home</a></li>
-                        <li><a href="{{ '/' | relative_url }}#products">Products</a></li>
-                        <li><a href="{{ '/' | relative_url }}#about">About</a></li>
-                        <li><a href="{{ '/' | relative_url }}#contact">Contact</a></li>
-                        <li><a href="{{ '/blog' | relative_url }}">Blog</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#about">Certifications</a></li>
+                        <li><a href="#about">Factory Tour</a></li>
+                        <li><a href="#about">Quality Control</a></li>
+                        <li><a href="/blog">Blog</a></li>
                     </ul>
                 </div>
+                
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#contact">Request Quote</a></li>
+                        <li><a href="#contact">Sample Request</a></li>
+                        <li><a href="#about">FAQ</a></li>
+                        <li><a href="#about">Shipping Info</a></li>
+                    </ul>
+                </div>
+                
                 <div class="footer-section">
                     <h4>Contact Info</h4>
-                    <p><i class="fas fa-phone"></i> +86 21 1234 5678</p>
-                    <p><i class="fas fa-envelope"></i> info@shinepeak.com</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Shanghai, China</p>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Shanghai, China</li>
+                        <li><i class="fas fa-phone"></i> +86 21 1234 5678</li>
+                        <li><i class="fas fa-envelope"></i> info@shinepeak.com</li>
+                        <li><i class="fab fa-whatsapp"></i> +86 138 0013 8000</li>
+                    </ul>
                 </div>
             </div>
+            
             <div class="footer-bottom">
-                <p>&copy; {{ site.time | date: '%Y' }} Shine Peak. All rights reserved.</p>
+                <p>&copy; {{ site.time | date: '%Y' }} Shine Peak. All rights reserved. | Eco-Friendly Tableware Manufacturer</p>
             </div>
         </div>
     </footer>
