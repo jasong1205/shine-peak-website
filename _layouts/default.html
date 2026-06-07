@@ -1,50 +1,50 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Primary Meta Tags -->
-    <title>{% if page.title %}{{ page.title }} | {% endif %}Shine Peak - Eco-Friendly Disposable Tableware</title>
-    <meta name="title" content="{% if page.title %}{{ page.title }} | {% endif %}Shine Peak - Eco-Friendly Disposable Tableware Manufacturer">
-    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}Leading manufacturer of eco-friendly disposable tableware: bagasse, kraft paper, wooden bamboo, paper straws. Biodegradable & compostable food packaging solutions.{% endif %}">
-    <meta name="keywords" content="eco-friendly tableware, biodegradable food packaging, bagasse tableware, paper straws{% if page.keywords %}, {{ page.keywords }}{% endif %}">
-    <meta name="author" content="Shine Peak">
+    <!-- Primary Meta -->
+    <title>{% if page.title %}{{ page.title }} | {% endif %}Shine Peak - Eco-Friendly Tableware Manufacturer</title>
+    <meta name="title" content="{% if page.title %}{{ page.title }} | {% endif %}Shine Peak">
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}Leading manufacturer of eco-friendly disposable tableware – bagasse, kraft paper, wooden bamboo, paper straws, CPLA cutlery. 15+ years, 50+ countries. Factory direct.{% endif %}">
+    <meta name="keywords" content="eco-friendly tableware, biodegradable food packaging, disposable tableware manufacturer{% if page.keywords %}, {{ page.keywords }}{% endif %}">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="{{ page.url | absolute_url }}">
     
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph -->
     <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
     <meta property="og:url" content="{{ page.url | absolute_url }}">
     <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}Shine Peak">
-    <meta property="og:description" content="{{ page.description | default: 'Leading manufacturer of eco-friendly disposable tableware' }}">
+    <meta property="og:description" content="{{ page.description | default: 'Leading manufacturer of eco-friendly disposable tableware. Global shipping, factory direct pricing.' }}">
     <meta property="og:image" content="{{ '/images/og-image.jpg' | absolute_url }}">
     <meta property="og:site_name" content="Shine Peak">
     
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="{{ page.url | absolute_url }}">
-    <meta property="twitter:title" content="{% if page.title %}{{ page.title }} | {% endif %}Shine Peak">
-    <meta property="twitter:description" content="{{ page.description | default: 'Leading manufacturer of eco-friendly disposable tableware' }}">
-    <meta property="twitter:image" content="{{ '/images/og-image.jpg' | absolute_url }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {% endif %}Shine Peak">
+    <meta name="twitter:description" content="{{ page.description | default: 'Leading manufacturer of eco-friendly disposable tableware.' }}">
+    <meta name="twitter:image" content="{{ '/images/og-image.jpg' | absolute_url }}">
     
     <!-- CSS -->
     <link rel="stylesheet" href="/css/style-pro.css">
-    <link rel="stylesheet" href="/css/placeholders.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="{{ '/images/favicon.png' | relative_url }}">
-    
-    <!-- RSS Feed -->
+    <!-- RSS + SEO -->
     {% feed_meta %}
-    
-    <!-- SEO Tag -->
     {% seo %}
+    
+    <!-- GTM placeholder: add GTM-XXXXXX -->
+    <!-- FB Pixel placeholder: add your Pixel ID -->
 </head>
 <body>
-    <!-- Top Bar -->
+
+    <!-- Nav Overlay (Mobile) -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- ============================================
+         TOP BAR
+         ============================================ -->
     <div class="top-bar">
         <div class="container">
             <div class="top-bar-left">
@@ -63,46 +63,64 @@
             </div>
             <div class="top-bar-right">
                 <a href="https://wa.me/8613800138000" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://linkedin.com/in/company/shinepeak" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://facebook.com/shinepeak" title="Facebook"><i class="fab fa-facebook-f"></i></a>
                 <a href="/blog" title="Blog"><i class="fas fa-blog"></i></a>
             </div>
         </div>
     </div>
 
-    <!-- Navigation -->
-    <nav class="navbar">
+    <!-- ============================================
+         NAVIGATION
+         ============================================ -->
+    <nav class="navbar" id="navbar">
         <div class="container">
-            <div class="logo">
+            <a href="{{ '/' | relative_url }}" class="logo">
                 <h1>Shine <span>Peak</span></h1>
-                <span class="tagline">Eco-Friendly Tableware Manufacturer</span>
-            </div>
-            <ul class="nav-links">
+                <span class="logo-tagline">Eco Tableware Manufacturer</span>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
                 <li><a href="{{ '/' | relative_url }}#home">Home</a></li>
                 <li><a href="{{ '/' | relative_url }}#products">Products</a></li>
                 <li><a href="{{ '/' | relative_url }}#about">About</a></li>
                 <li><a href="{{ '/' | relative_url }}#contact">Contact</a></li>
-                <li><a href="{{ '/' | relative_url }}#contact" class="cta-btn">Get Quote</a></li>
+                <li><a href="{{ '/' | relative_url }}#contact" class="cta-btn">Get Quote <i class="fas fa-arrow-right"></i></a></li>
             </ul>
+
+            <div class="nav-search">
+                <input type="text" placeholder="Search products..." aria-label="Search">
+                <button type="button" aria-label="Search"><i class="fas fa-search"></i></button>
+            </div>
+
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
 
-    <!-- Main Content -->
+    <!-- ============================================
+         MAIN CONTENT
+         ============================================ -->
     <main>
         {{ content }}
     </main>
 
-    <!-- Footer -->
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-section">
                     <h3>Shine Peak</h3>
-                    <p>Professional manufacturer of eco-friendly disposable tableware. Committed to providing sustainable food packaging solutions for global clients.</p>
+                    <p>Professional manufacturer of eco-friendly disposable tableware since 2010. We serve restaurants, hotels, airlines, and food chains worldwide with sustainable packaging solutions.</p>
                     <div class="footer-social">
                         <a href="https://wa.me/8613800138000" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://linkedin.com/in/company/shinepeak" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://facebook.com/shinepeak" title="Facebook"><i class="fab fa-facebook-f"></i></a>
                         <a href="/blog" title="Blog"><i class="fas fa-blog"></i></a>
                     </div>
                 </div>
@@ -110,19 +128,19 @@
                 <div class="footer-section">
                     <h4>Products</h4>
                     <ul>
-                        <li><a href="#products">Bagasse Tableware</a></li>
-                        <li><a href="#products">Kraft Paper Tableware</a></li>
-                        <li><a href="#products">Paper Straws</a></li>
-                        <li><a href="#products">Wooden & Bamboo</a></li>
-                        <li><a href="#products">CPLA Cutlery</a></li>
+                        <li><a href="{{ '/' | relative_url }}#products">Bagasse Tableware</a></li>
+                        <li><a href="{{ '/' | relative_url }}#products">Kraft Paper</a></li>
+                        <li><a href="{{ '/' | relative_url }}#products">Paper Straws</a></li>
+                        <li><a href="{{ '/' | relative_url }}#products">Wooden & Bamboo</a></li>
+                        <li><a href="{{ '/' | relative_url }}#products">CPLA Cutlery</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-section">
                     <h4>Company</h4>
                     <ul>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#about">Certifications</a></li>
+                        <li><a href="{{ '/' | relative_url }}#about">About Us</a></li>
+                        <li><a href="{{ '/' | relative_url }}#about">Certifications</a></li>
                         <li><a href="#about">Factory Tour</a></li>
                         <li><a href="#about">Quality Control</a></li>
                         <li><a href="/blog">Blog</a></li>
@@ -132,9 +150,9 @@
                 <div class="footer-section">
                     <h4>Support</h4>
                     <ul>
-                        <li><a href="#contact">Contact Us</a></li>
-                        <li><a href="#contact">Request Quote</a></li>
-                        <li><a href="#contact">Sample Request</a></li>
+                        <li><a href="{{ '/' | relative_url }}#contact">Contact Us</a></li>
+                        <li><a href="{{ '/' | relative_url }}#contact">Request Quote</a></li>
+                        <li><a href="{{ '/' | relative_url }}#contact">Sample Request</a></li>
                         <li><a href="#about">FAQ</a></li>
                         <li><a href="#about">Shipping Info</a></li>
                     </ul>
@@ -147,17 +165,31 @@
                         <li><i class="fas fa-phone"></i> +86 21 1234 5678</li>
                         <li><i class="fas fa-envelope"></i> info@shinepeak.com</li>
                         <li><i class="fab fa-whatsapp"></i> +86 138 0013 8000</li>
+                        <li><i class="far fa-clock"></i> Mon–Sat 9:00–18:00 (GMT+8)</li>
                     </ul>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; {{ site.time | date: '%Y' }} Shine Peak. All rights reserved. | Eco-Friendly Tableware Manufacturer</p>
+                <p>&copy; {{ site.time | date: '%Y' }} Shine Peak. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms</a>
+                </div>
             </div>
         </div>
     </footer>
 
-    <!-- JavaScript -->
+    <!-- Floating Buttons -->
+    <a href="https://wa.me/8613800138000" class="floating-whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
     <script src="{{ '/js/script.js' | relative_url }}"></script>
 </body>
 </html>
