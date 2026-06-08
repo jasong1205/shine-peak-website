@@ -7,8 +7,18 @@
   JEKYLL_ENV = "production"
 
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
+  from = "/blog/*"
+  to = "/blog.html"
+  status = 200
+
+[[redirects]]
+  from = "/products/*"
+  to = "/products.html"
+  status = 200
+
+[[redirects]]
+  from = "/admin/*"
+  to = "/admin/index.html"
   status = 200
 
 [[headers]]
