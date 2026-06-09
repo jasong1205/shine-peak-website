@@ -1,0 +1,18 @@
+# Build artifacts
+*.zip
+
+# Debug/test scripts
+check_fa_usage.py
+clean_site.py
+debug_server*.py
+fix_more_icons.py
+fix_topbar_icons.py
+icon_fix_*.md
+inspect_layout.py
+rebuild_site.py
+rebuild_site_fixed.py
+rebuild_site_v2.py
+verify_*.py
+
+# Images at root (managed in assets/ or _site/)
+/images/
