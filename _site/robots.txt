@@ -1,8 +1,8 @@
 User-agent: *
 Allow: /
 
-# Allow all crawlers
-Sitemap: https://shinepeak.com/sitemap.xml
+# Sitemap
+Sitemap: https://shine-peak-website.pages.dev/sitemap.xml
 
 # Disallow admin or private pages (if any)
 # Disallow: /admin/

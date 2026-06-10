@@ -1,4 +1,4 @@
-﻿/* ===================================
+/* ===================================
    Shine Peak - Main JavaScript
    Mobile navigation, smooth scroll, animations
    =================================== */
@@ -23,12 +23,10 @@ document.addEventListener('DOMContentLoaded', function() {
         hamburger.addEventListener('click', toggleMenu);
     }
 
-    // Close menu on overlay click
     if (navOverlay) {
         navOverlay.addEventListener('click', toggleMenu);
     }
 
-    // Close menu on link click
     document.querySelectorAll('.nav-links a').forEach(function(link) {
         link.addEventListener('click', function() {
             if (navLinks.classList.contains('active')) {
@@ -141,33 +139,5 @@ document.addEventListener('DOMContentLoaded', function() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     }
-
-    // ===================================
-    // Schema.org Structured Data
-    // ===================================
-    var productSchema = {
-        '@context': 'https://schema.org',
-        '@type': 'Organization',
-        'name': 'Shine Peak',
-        'description': 'Eco-friendly disposable tableware manufacturer',
-        'url': 'https://shine-peak.netlify.app',
-        'logo': 'https://shine-peak.netlify.app/images/favicon.png',
-        'contactPoint': {
-            '@type': 'ContactPoint',
-            'telephone': '+86-21-1234-5678',
-            'contactType': 'sales',
-            'email': 'info@shinepeak.com'
-        },
-        'address': {
-            '@type': 'PostalAddress',
-            'addressLocality': 'Shanghai',
-            'addressCountry': 'CN'
-        }
-    };
-
-    var script = document.createElement('script');
-    script.type = 'application/ld+json';
-    script.textContent = JSON.stringify(productSchema);
-    document.head.appendChild(script);
 
 });
